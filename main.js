@@ -121,16 +121,16 @@ function playGame() {
     score.innerHTML = `<b>SCORE: ${setting.score}</b>`;
 
     if ((keys.ArrowLeft || keys.a) && setting.x > 0) {
-      setting.x -= setting.speed;
+      setting.x -= setting.speed*0.6;
     }
     if ((keys.ArrowRight || keys.d) && setting.x < (gameArea.offsetWidth - car.offsetWidth)) {
-      setting.x += setting.speed;
+      setting.x += setting.speed*0.6;
     }
     if ((keys.ArrowUp || keys.w) && setting.y > 0) {
-      setting.y -= setting.speed;
+      setting.y -= setting.speed*0.8;
     }
     if ((keys.ArrowDown || keys.s) && setting.y < (gameArea.offsetHeight - car.offsetHeight)) {
-      setting.y += setting.speed;
+      setting.y += setting.speed*0.8;
     }
     car.style.left = setting.x + 'px';
     car.style.top = setting.y + 'px';
