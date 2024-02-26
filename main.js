@@ -50,7 +50,7 @@ const changeLevel = (lvl) => {
       setting.speed = 5;
       break;
     case '3':
-      setting.traffic = 1;
+      setting.traffic = 2;
       setting.speed = 16;
       break;
   }
